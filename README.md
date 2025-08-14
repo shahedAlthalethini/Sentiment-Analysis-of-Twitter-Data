@@ -2,7 +2,7 @@ Of course. Here is a more detailed and professional `README.md` file, breaking d
 
 ---
 
-# Twitter Sentiment Analysis Engine
+# Twitter Sentiment Analysis 
 
 ![Python Version](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Libraries](https://img.shields.io/badge/Libraries-Pandas%20%7C%20NumPy-orange.svg)
