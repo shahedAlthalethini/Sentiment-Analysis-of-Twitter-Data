@@ -10,7 +10,7 @@ Of course. Here is a more detailed and professional `README.md` file, breaking d
 
 This repository contains the code and resources for a sentiment analysis project completed for the **DSAI 1303: Data Science Programming Languages** course. The project tackles the challenge of quantifying public opinion by processing and analyzing a dataset of tweets. It involves data cleaning, sentiment scoring based on a lexicon, and a novel approach to derive the sentiment of previously unknown terms.
 
-## 🗂️ Table of Contents
+## Table of Contents
 - [Project Overview](#-project-overview)
 - [Technical Walkthrough](#-technical-walkthrough)
   - [Part 1: Data Loading & Preprocessing](#part-1-data-loading--preprocessing)
@@ -21,7 +21,7 @@ This repository contains the code and resources for a sentiment analysis project
 - [Outputs Explained](#-outputs-explained)
 - [Future Improvements](#-future-improvements)
 
-## 🎯 Project Overview
+## Project Overview
 
 The core objective is to build a system that can automatically assign a sentiment score to text from Twitter. This is achieved through a three-step pipeline:
 
@@ -29,7 +29,7 @@ The core objective is to build a system that can automatically assign a sentimen
 2.  **Estimate Tweet Sentiment:** Calculate a sentiment score for each tweet by summing the scores of its individual words, using the `AFINN-111` lexicon.
 3.  **Estimate Term Sentiment:** For words not present in the initial lexicon, deduce their sentiment based on the overall sentiment of the tweets in which they appear.
 
-## 🛠️ Technical Walkthrough
+## Technical Walkthrough
 
 This section details the logic implemented in the `Sentiment Analysis.ipynb` notebook.
 
@@ -108,7 +108,7 @@ If "football" appears in three tweets with scores `+3` (e.g., "I love football")
 
 **Output:** A list or DataFrame mapping each new term to its calculated sentiment score, effectively expanding our sentiment lexicon.
 
-## 📁 Project Structure
+## Project Structure
 ```
 .
 ├── Sentiment Analysis.ipynb    # Main Jupyter Notebook with all code and explanations.
@@ -119,7 +119,7 @@ If "football" appears in three tweets with scores `+3` (e.g., "I love football")
 └── README.md                   # This file.
 ```
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
 ### Prerequisites
 -   Python 3.9 or higher
@@ -149,13 +149,13 @@ If "football" appears in three tweets with scores `+3` (e.g., "I love football")
     - Open the `Sentiment Analysis.ipynb` file.
     - Execute the cells sequentially from top to bottom. The notebook is designed to be run in order, as later cells depend on the outputs of earlier ones.
 
-## 📊 Outputs Explained
+## Outputs Explained
 
 -   **`clean_tweets.txt`**: A text file containing the processed tweets. Each line is a single tweet, stripped of mentions, URLs, and excess punctuation, and converted to lowercase.
 -   **`sentiment.txt`**: A text file containing a single integer or float on each line. The number on line `N` is the calculated sentiment score for the tweet on line `N` of `clean_tweets.txt`.
 -   **New Term Sentiments (In-Notebook Output)**: The final cells of the notebook will display a Pandas DataFrame showing the newly discovered terms and their derived sentiment scores.
 
-## 🔮 Future Improvements
+## Future Improvements
 This project provides a solid foundation. Future work could include:
 -   **Advanced Preprocessing:** Implement lemmatization or stemming to group different forms of a word (e.g., "run," "running," "ran") into a single token.
 -   **Handling Negations and Modifiers:** The current model doesn't handle negations (e.g., "not good") or intensifiers (e.g., "very good") effectively. A more advanced parser could be used to invert or amplify scores based on these modifiers.
