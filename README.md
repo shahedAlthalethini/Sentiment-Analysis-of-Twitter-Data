@@ -1,7 +1,3 @@
-Of course. Here is a more detailed and professional `README.md` file, breaking down the project's methodology, technical details, and potential future work.
-
----
-
 # Twitter Sentiment Analysis 
 
 ![Python Version](https://img.shields.io/badge/Python-3.9+-blue.svg)
